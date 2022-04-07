@@ -138,7 +138,7 @@ top: 286px;
   border: none;
   font-weight: 500;
   font-size: 15px;
-  padding: 4px 10px;
+  padding: 5px 10px;
 }
 .join-button{
   background: #2F6CE5;
@@ -146,6 +146,38 @@ top: 286px;
   border: none;
   font-weight: 500;
   font-size: 15px;
-  padding: 4px 10px;
+  padding: 5px 10px;
   color: #fff;
+}
+.follow-button{
+  background: #EDEEF0;
+  border-radius: 14px;
+  border: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+  padding: 4px 12px;
+}
+.followed-button{
+  background: #000;
+  border-radius: 14px;
+  border: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  padding: 4px 12px;
+}
+.group-image{
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #000;
+}
+.group-name{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
 }

@@ -4,16 +4,14 @@ import {
   Navbar,
   Container,
   Nav,
-  Button,
   Form,
   FormControl,
-  NavLink,
 } from "react-bootstrap";
 
 const NavigationBar = () => {
   return (
     <Navbar className="nabvar" expand="lg">
-      <Container>
+      <Container fluid className="ATG-container">
         <Navbar.Brand href="#home">
           <img
             src={logo}

@@ -102,25 +102,6 @@ top: 286px;
 .main-container{
   padding: 0px 96px !important;
 } 
-@media screen and (max-width:991px) {
-  .main-container{
-    padding: 0px 10px !important;
-  } 
-  .banner{
-    height: 300px;
-    width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.60)), url("/src/Utilitis/images/Rectangle\ 2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-  }
-  .banner-content{
-    position: absolute;
-    left: 16px;
-    top: 188px;
-    }
-}
 #postviews{
   display: flex;
 }
@@ -297,6 +278,56 @@ opacity: 0.6;
 .logout:hover{
   background-color: #f1f1f1;
 }
-.location-search::placeholder{
-  
+/* -------responsive design----------- */
+@media screen and (max-width:991px) {
+  .main-container{
+    padding: 0px 10px !important;
+  } 
+  .banner{
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.60)), url("/src/Utilitis/images/Rectangle\ 2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  .banner-content{
+    position: absolute;
+    left: 16px;
+    top: 188px;
+    }
+    .login-card{
+      width: 100%;
+    }
+    .modal-header{
+      width: 450px !important;
+    }
+    .ATG-container{
+      padding: 0px 14px !important;
+    }
+    .join-button{
+      position: absolute;
+      top:100px; 
+      background: none; 
+      border: 1px solid #fff;
+      right: 14px;                           ;
+    }
+    .join-button:hover{
+      background: #2F6CE5;
+      border-color: #2F6CE5;
+    }
+    .for-mobile{
+      display: none;
+      visibility: hidden;
+    }
+    .arrow-for-mobile{
+      position: absolute;
+      top:110px; 
+      left: 16px;
+    }
+    .sign-image{
+      display: none;
+      padding-bottom: 10px;
+    }
 }

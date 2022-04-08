@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-bootstrap';
-import author from '../../../Utilitis/images/Rectangle 3.png'
 import { faThumbsUp} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Recomendations = () => {
-    const [follow,setFollow] = useState(false);
+    const [follow,setFollow] = useState(true);
 
     const groups = [
         {

@@ -31,17 +31,23 @@ const MainContent = () => {
           <Nav.Item className="border-bottom bold border-2 pb-3 border-secondary">
             All Posts(32)
           </Nav.Item>
-          <Nav.Item className="pb-3">Article</Nav.Item>
-          <Nav.Item className="pb-3">Event</Nav.Item>
-          <Nav.Item className="pb-3">Education</Nav.Item>
-          <Nav.Item className="pb-3">Job</Nav.Item>
+          <Nav.Item className="pb-3 for-mobile">Article</Nav.Item>
+          <Nav.Item className="pb-3 for-mobile">Event</Nav.Item>
+          <Nav.Item className="pb-3 for-mobile">Education</Nav.Item>
+          <Nav.Item className="pb-3 for-mobile">Job</Nav.Item>
         </Nav>
         {/* write and join group button  */}
         <div className="d-flex flex-row gap-3 mb-1">
-          <button className="Write-button d-flex flex-row gap-3 align-items-center">
+        <div className="d-md-none arrow-for-mobile"><i className="fas fa-arrow-left fs-5 text-white"></i></div>
+          <button className="Write-button for-mobile d-flex flex-row gap-3 align-items-center">
             Write a Post
             <img src={vector} alt="arrow down icon" />
           </button>
+          <button className="Write-button d-md-none d-flex flex-row gap-3 align-items-center">
+            Filter All
+            <img src={vector} alt="arrow down icon" />
+          </button>
+
           {
             !user.email ?
             <button

@@ -30,7 +30,7 @@ const Login = ({click,setClick}) => {
             computer engineering. Sign up now 🤘🏼
           </h6>
           <Row className="px-4 pt-4">
-            <Col lg={6}>
+            <Col lg={6} sm={12} xs={12} md={6}>
               <h5 className="create">Sign In</h5>
               <form className="login-form mt-4 pb-4">
                 <div>
@@ -72,8 +72,8 @@ const Login = ({click,setClick}) => {
                 </div>
               </form>
             </Col>
-            <Col lg={6}>
-              <p style={{ fontSize: "14px" }} className="mb-0 text-end">
+            <Col lg={6} sm={12} xs={12} md={6}>
+              <p style={{ fontSize: "14px" }} className="mb-0 text-md-end text-center">
                 Don’t have an account yet?{" "}
                 <a onClick={() => setClick(!click)}
                   style={{ textDecoration: "none", fontWeight: "600" }}
@@ -83,8 +83,8 @@ const Login = ({click,setClick}) => {
                 </a>
               </p>
 
-              <div className="d-flex flex-column align-items-center h-100 justify-content-center">
-                <img className="img-fluid" src={loginImage} alt="" />
+              <div className="d-flex flex-column sign-image align-items-center h-100 justify-content-center">
+                <img className="img-fluid sign-image" src={loginImage} alt="" />
               </div>
             </Col>
           </Row>

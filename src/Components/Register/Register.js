@@ -93,7 +93,7 @@ const Register = ({click,setClick}) => {
               </form>
             </Col>
             <Col lg={6}>
-              <p className="mb-0 text-end">
+              <p className="mb-0 text-md-end text-center">
                 Already have an account?{" "}
                 <a onClick={() => setClick(!click)}
                   style={{ textDecoration: "none", fontWeight: "600" }}
@@ -104,8 +104,8 @@ const Register = ({click,setClick}) => {
               </p>
 
               <div className="d-flex flex-column align-items-center h-100 justify-content-center">
-                <img className="img-fluid" src={loginImage} alt="" />
-                <p className="mb-0 terms mt-4">
+                <img className="img-fluid sign-image" src={loginImage} alt="" />
+                <p className="mb-0 terms mt-md-4 pb-4 pb-md-0">
                   By signing up, you agree to our Terms & conditions, Privacy
                   policy
                 </p>

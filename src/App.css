@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
 .App{
   font-family: 'IBM Plex Sans';
+  overflow-x: hidden;
 }
 .App-logo {
   height: 40vmin;
@@ -100,6 +101,28 @@ top: 286px;
 /* ----------blog content------------ */
 .main-container{
   padding: 0px 96px !important;
+} 
+@media screen and (max-width:991px) {
+  .main-container{
+    padding: 0px 10px !important;
+  } 
+  .banner{
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.60)), url("/src/Utilitis/images/Rectangle\ 2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  .banner-content{
+    position: absolute;
+    left: 16px;
+    top: 188px;
+    }
+}
+#postviews{
+  display: flex;
 }
 .main-content{
   padding-top: 28px;
@@ -180,4 +203,97 @@ top: 286px;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
+}
+/* login */
+.login-card{
+  width: 736px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.login-subtitle{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #008A45;
+  background-color: #EFFFF4;
+}
+.create{
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 31px;
+color: #000000;
+}
+.login-form input{
+  width: 100%;
+  background: #F7F8FA;
+  border: 1px solid #D9D9DB;
+  box-sizing: border-box;
+  padding: 15px 12px;
+  font-weight: 500;
+}
+.create-button{
+  background: #2F6CE5;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  height: 40px;
+  margin: 19px 0px;
+}
+.sign-up-button{
+  background: #FFFFFF;
+border: 0.6px solid #D9D9DB;
+box-sizing: border-box;
+border-radius: 2px;
+height: 38px;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+width: 100%;
+margin-bottom: 8px;
+}
+.terms{
+  font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+text-align: right;
+letter-spacing: -0.008em;
+color: #000000;
+opacity: 0.6;
+}
+.close-button{
+  width :23px;
+  height :23px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  font-weight: 600;
+}
+.modal-content{
+  background-color: transparent !important;
+  border: none !important;
+}
+.modal-header{
+  border: none !important;
+  width: 630px !important;
+  margin-bottom: 10px;
+}
+.modal-header button{
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.logout{
+  width: 100px;
+  z-index: 10;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.logout:hover{
+  background-color: #f1f1f1;
 }

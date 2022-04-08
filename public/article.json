@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "tag": "Article",
+        "title": "What if famous brands had regular fonts? Meet RegulaBrands!",
+        "details" : "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+        "authorImage" : "https://i.ibb.co/gVnTykd/Rectangle-3.png",
+        "authorName": "Sarthak Kamra",
+        "thumbnail":"https://i.ibb.co/dbMH98C/Rectangle-5-2.png"
+    },
+    {
+        "id": 2,
+        "tag": "Education",
+        "title": "Tax Benefits for Investment under National Pension Scheme launched by Government",
+        "details" : "I’ve worked in UX for the better part of a decade. From now on, I plan to rei…",
+        "authorImage" : "https://i.ibb.co/Hd4MBDc/Rectangle-3-1.png",
+        "authorName": "Sarah West",
+        "thumbnail":"https://i.ibb.co/tYH458j/Rectangle-5-1.png"
+    },
+    {
+        "id": 3,
+        "tag": "Meetup",
+        "title": "Finance & Investment Elite Social Mixer @Lujiazui",
+        "authorImage" : "https://i.ibb.co/z4J6Fm2/Rectangle-3-3.png",
+        "authorName": "Ronal Jones",
+        "thumbnail":"https://i.ibb.co/G0jt4D9/Rectangle-5.png",
+        "views":"1.4",
+        "date": "Fri, 12 Oct, 2018",
+        "location":"Ahmedabad, India"
+    },
+    {
+        "id": 4,
+        "tag": "Job",
+        "title": "Software Developer",
+        "authorImage" : "https://i.ibb.co/tzmWVT6/Rectangle-3-2.png",
+        "authorName": "Joseph Gray",
+        "thumbnail":"",
+        "views":"1.4",
+        "company": "Innovaccer Analytics Private Ltd.",
+        "location":"Ahmedabad, India"
+    }
+]

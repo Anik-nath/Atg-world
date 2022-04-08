@@ -26,6 +26,7 @@ const useFirebase = () =>{
          setError('');
          const destination = location?.state?.from || '/';
          navigate(destination);
+         window.location.reload();
         }).catch((error) => {
          setError(error.message)
         })

@@ -53,7 +53,6 @@ const MainContent = () => {
           </button>
           :
           <button
-            onClick={handleShow}
             className="join-button bg-white text-dark border d-flex flex-row gap-1 align-items-center"
           >
             <img src="https://i.ibb.co/yYT7xFV/Vector.png" alt="join group icon" />
@@ -73,7 +72,7 @@ const MainContent = () => {
           ))}
         </Col>
         <Col className="pt-3 ps-5" lg={4} sm={12} xs={12} md={4}>
-          <div className="d-flex justify-content-between align-items-center  border-bottom py-3">
+          {/* <div className="d-flex justify-content-between align-items-center  border-bottom py-3">
             <div className="d-flex gap-2 align-items-center text-black">
               <i className="fas fa-map-marker-alt fs-6"></i>
               <p className="mb-0">Noida, India</p>
@@ -81,7 +80,23 @@ const MainContent = () => {
             <div>
               <i className="fas fa-pen fs-6"></i>
             </div>
+          </div> */}
+
+          <div className="position-relative">
+            <label htmlFor="text" className="border-0 border-bottom w-100">
+              <i className="fas fa-map-marker-alt fs-6 position-absolute mt-2"></i>
+              {/* <span className="position-absolute ms-4">Noida, India</span> */}
+              <i className="fas fa-pen fs-6 position-absolute end-0 mt-1"></i>
+              {
+                !user.email ?
+                <input disabled placeholder="Noida, India" type="text" className="location-search py-1 ps-4 border-0 w-100 bg-transparent"/>
+                :
+                <input  placeholder="Noida, India" type="text" className="location-search py-1 ps-4 border-0 w-100 bg-transparent"/>
+              }
+            </label>
           </div>
+
+
           <div className="mt-4 d-flex text-secondary align-items-top">
             <FontAwesomeIcon className="me-2 fs-6" icon={faCircleExclamation} />
             <p style={{ fontSize: "13px" }} className="mb-0">

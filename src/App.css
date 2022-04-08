@@ -297,3 +297,6 @@ opacity: 0.6;
 .logout:hover{
   background-color: #f1f1f1;
 }
+.location-search::placeholder{
+  
+}

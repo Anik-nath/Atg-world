@@ -28,7 +28,7 @@ const NavigationBar = () => {
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
+        <Navbar.Collapse className="d-none d-md-table" id="navbarScroll">
           <Nav
             className="mx-auto my-2 my-lg-0"
             style={{ maxHeight: "100px" }}
@@ -36,7 +36,7 @@ const NavigationBar = () => {
           >
             <Form className="d-flex top-search-field align-items-center">
               <i className="fas fa-search search-icon"></i>
-              <FormControl
+              <FormControl 
                 type="search"
                 placeholder="Search for your favorite groups in ATG"
                 className="me-2 border-0 input-box bg-transparent"
